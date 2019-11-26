@@ -6,7 +6,7 @@ export class TabsService {
   tabHeight = 32;
   tabGutter = 16;
   svgWidth = 1000;
-  svgHeight = 500;
+  svgHeight = 50;
 
   constructor() { }
 }

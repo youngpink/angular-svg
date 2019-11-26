@@ -5,6 +5,8 @@
   attr.height="{{tabsService.tabHeight}}"
 >
   <foreignObject [ngStyle]="getStyle()">
-    <xhtml:div>{{tab.text}}</xhtml:div>
+    <xhtml:div (click)="updateRouter()">
+      {{tab.text}}
+    </xhtml:div>
   </foreignObject>
 </svg>

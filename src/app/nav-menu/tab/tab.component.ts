@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TabsService } from '../tabs.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'g[app-tab]',
@@ -9,7 +10,10 @@ import { TabsService } from '../tabs.service';
 export class TabComponent implements OnInit {
   @Input() tab;
 
-  constructor(public tabsService: TabsService) { }
+  constructor(
+    public tabsService: TabsService,
+    private router: Router,
+  ) { }
 
   ngOnInit() {
   }
@@ -19,6 +23,10 @@ export class TabComponent implements OnInit {
       width: this.tabsService.tabWidth + 'px',
       height: this.tabsService.tabHeight + 'px',
     };
+  }
+
+  updateRouter() {
+    this.router.navigate([this.tab.link]);
   }
 
 }

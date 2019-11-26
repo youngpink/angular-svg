@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TabsComponent } from './nav-menu/tabs/tabs.component';
 import { TabComponent } from './nav-menu/tab/tab.component';
-import { Example1Component } from './example1/example1/example1.component';
+import { DrawComponent } from './draw/draw/draw.component';
 import { Example2Component } from './example2/example2/example2.component';
 
 @NgModule({
@@ -13,7 +13,7 @@ import { Example2Component } from './example2/example2/example2.component';
     AppComponent,
     TabsComponent,
     TabComponent,
-    Example1Component,
+    DrawComponent,
     Example2Component
   ],
   imports: [

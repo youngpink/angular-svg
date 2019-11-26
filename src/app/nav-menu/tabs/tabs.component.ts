@@ -10,7 +10,7 @@ import { TabsService } from '../tabs.service';
 export class TabsComponent implements OnInit {
   tabs = [{
     text: '例子1',
-    link:  '/example1'
+    link:  '/draw'
   }, {
     text: '例子2',
     link:  '/example2'

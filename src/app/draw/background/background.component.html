@@ -1,0 +1,19 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <line
+    *ngFor="let y of drawService.getHorizontalLines()"
+    x1="0"
+    attr.x2="{{drawService.boardWidth}}"
+    attr.y1="{{y}}"
+    attr.y2="{{y}}"
+  ></line>
+  <line
+    *ngFor="let x of drawService.getVerticalLines()"
+    attr.x1="{{x}}"
+    attr.x2="{{x}}"
+    y1="0"
+    attr.y2="{{drawService.boardHeight}}"
+  ></line>
+</svg>
+

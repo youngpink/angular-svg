@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { DrawService } from '../draw.service';
 
 @Component({
-  selector: 'app-example1',
-  templateUrl: './draw.component.html',
-  styleUrls: ['./draw.component.scss'],
-  providers: [DrawService],
+  selector: 'g[app-background]',
+  templateUrl: './background.component.html',
+  styleUrls: ['./background.component.scss']
 })
-export class DrawComponent implements OnInit {
+export class BackgroundComponent implements OnInit {
 
   constructor(public drawService: DrawService) { }
 

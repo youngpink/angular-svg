@@ -1,0 +1,15 @@
+<svg
+  attr.width="{{tabsService.svgWidth}}"
+  attr.height="{{tabsService.svgHeight}}"
+  attr.viewBox="0 0 {{tabsService.svgWidth}} {{tabsService.svgHeight}}"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g attr.transform="translate({{getGlobalOffsetX()}}, 0)">
+    <g
+      app-tab
+      *ngFor="let tab of tabs; index as i"
+      [tab]="tab"
+      attr.transform="translate({{getOffsetX(i)}}, 0)"
+    ></g>
+  </g>
+</svg>

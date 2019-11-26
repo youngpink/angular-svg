@@ -1,6 +1,12 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
 >
+  <rect
+    x="0"
+    y="0"
+    attr.width="{{drawService.boardWidth}}"
+    attr.height="{{drawService.boardHeight}}"
+  ></rect>
   <line
     *ngFor="let y of drawService.getHorizontalLines()"
     x1="0"

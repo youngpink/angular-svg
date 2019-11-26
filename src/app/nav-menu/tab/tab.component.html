@@ -1,12 +1,11 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml"
   attr.width="{{tabsService.tabWidth}}"
   attr.height="{{tabsService.tabHeight}}"
+  (click)="updateRouter()"
 >
-  <foreignObject [ngStyle]="getStyle()">
-    <xhtml:div (click)="updateRouter()" [class.active]="isActive()">
-      {{tab.text}}
-    </xhtml:div>
-  </foreignObject>
+  <text x="32"  y="20" [class.active]="isActive()">
+    {{tab.text}}
+  </text>
+  <line x1="0" y1="32" x2="64" y2="32" [class.active]="isActive()"></line>
 </svg>

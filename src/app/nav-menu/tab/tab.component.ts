@@ -29,4 +29,8 @@ export class TabComponent implements OnInit {
     this.router.navigate([this.tab.link]);
   }
 
+  isActive(): boolean {
+    return window.location.href.includes(this.tab.link);
+  }
+
 }
